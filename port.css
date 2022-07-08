@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+html, body {
+    background-image: url('img/background.jpg');
+    overflow: hidden;
+}
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+    }
+    ::-webkit-scrollbar {
+    width: 0px;
+    }
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.main-width{
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+.hero{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+header{
+    padding: 40px 0 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo i{
+    height: 55px;
+    width: 55px;
+    background: transparent;
+    border: 2px solid #0ca8f0;
+    color: #0ca8f0;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+nav .hamb{
+    width: 40px;
+    height: 30px;
+    right: 5%;
+    top: 60px;
+    z-index: 5;
+    background: transparent;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+nav .hamb span{
+    display: block;
+    background: #0ca8f0;
+    width: 100%;
+    height: 3px;
+    transition: .3s;
+    transition-property: transform,opacity;
+}
+nav .hamb span:nth-child(2){
+    margin: 7px 0px;
+}
+nav .nav-list{
+    list-style: none;
+}
+nav .nav-list li{
+    display: inline-block;
+}
+nav .nav-list li a{
+    display: inline-block;
+    color: #eee;
+    margin-left: 55px;
+    font-size: 15px;
+    font-weight: 600;
+}
+nav .nav-list li a:hover{
+    color: #0ca8f0;
+    transition: .4s;
+}
+.container{
+    padding-top: 190px;
+    color: white;
+}
+.container .hero-text{
+    margin-bottom: 40px;
+}
+.container .hero-text h1{
+    color: white;
+    font-size: 47px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin: 20px 0px 20px;
+}
+span{
+    color: #0ca8f0;
+}
+.container .hero-text h3{
+    color: #eee;
+    font-weight: 400;
+    font-size: 17px;
+}
+.container .hero-text h4{
+    max-width: 100%;
+    color: #eee;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.container .hero-text p{
+    width: 440px;
+    max-width: 100%;
+    color: #eee;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.container .hero-text button{
+    color: #eee;
+    background: #0ca8f0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 8px 30px;
+    border: 2px solid #0ca8f0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.container .hero-text button:hover{
+    background: transparent;
+    border: 2px solid #0ca8f0;
+    color: #0ca8f0;
+    transition: .4s;
+}
+.social a{
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    color: #eee;
+    cursor: pointer;
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 35px; 
+}
+.social a:hover{
+    transform: scale(1.1);
+    background: #0ca8f0;
+    transform: .4s;
+}
+.bottom{
+    margin-top: 243px;
+    padding-bottom: 40px;
+}
+.bottom p{
+    color: #eee;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+.about{
+    width: 100%;
+    padding: 78px 0px;
+}
+.about img{
+    height: auto;
+    width: 420px;
+}
+.about-text{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h1{
+    color: white;
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    color: white;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+.about-text p{
+    color: white;
+    line-height: 28px;
+    font-size: 15px;
+    margin-bottom: 45px;
+}
+@media(max-width: 768px){
+    .about,
+    .about-text,
+    .main,
+    .bottom,
+    .container,
+    .about img{
+        float: none;
+        text-align: center;
+        width: 100%;
+        display:list-item;
+        list-style: none;
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 99%;
+}
+}
